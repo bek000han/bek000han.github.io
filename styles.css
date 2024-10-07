@@ -359,6 +359,7 @@ section {
     padding: 1rem;
     display: flex;
     justify-content: center;
+    padding-bottom: 0;
 }
 
 .academic-details {
@@ -395,7 +396,7 @@ section {
 
 #projects {
     position: relative;
-    padding-top: 4rem;
+    padding-top: 8rem;
     margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
