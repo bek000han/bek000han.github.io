@@ -1,1 +1,1 @@
-# personal-website-2
+# My personal website hosted on Github Pages
