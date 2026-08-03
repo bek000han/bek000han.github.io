@@ -1,367 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">portfolio | bekz.github.io</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">about</a></li>
-          <li><a href="#experience">experience</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#academic">academic</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamb-nav">
-      <div class="logo">Bekzatkhan Maulen</div>
-      <div class="hamb-menu">
-        <div class="hamb-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#academic" onclick="toggleMenu()">Academic</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile_default.png" alt="Bekz profile pic">
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Greetings, I'm</p>
-        <h1 class="title">Bekzatkhan Maulen</h1>
-        <p class="section__text__p2">computer science undergrad</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/')">
-            Download CV
-          </button>
-          <button class="btn btn-color-2" onclick="location.href='./#contact'">
-            Contact Me
-          </button>
-        </div>
-        <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="LinkedIn link" 
-          class="icon" onclick="location.href='https://www.linkedin.com/in/bekzatkhanmaulen2003/'">
-          <img src="./assets/github.png" alt="Github link" 
-          class="icon" onclick="location.href='https://github.com/bek000han'">
-          <img src="./assets/email.jpg" alt="Email link" 
-          class="icon" onclick="location.href='mailto:bekuniversity@gmail.com'">
-        </div>
-        <div class="quote-container">
-          <blockquote>"work smart - play hard"</blockquote>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Who is Bekz?</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container" id="gradpic">
-          <img src="./assets/menobgdef.png" 
-          alt="profile picture" class="about-pic">
-        </div>
-        <div class="about-details-container">
-          <div class="text-container">
-            <p class="brief-container">Hello and welcome to my website, you may call me Bekz.
-              I am currently pursuing an undergraduate degree in computer science, aiming to finish with flying marks. 
-              <br><br>
-              I have always been interested in computing, always tinkering and learning about computers since a young age.
-              My journey so far has been fulfilling, delving deep into the theory but also picking up the practical skills too.
-              <br><br>
-              I have so far gained invaluable experience as an intern working in technician and developer roles.
-              I am already getting quite familiar with the IT field and how business is handled in the technical context.
-              <br><br>
-              In my spare time, I dedicate even more time to CS, for instance - read up on theoretical CS, write code that interests me, 
-              develop games in Godot, playing around with computer parts and network equipment and more.
-            </p>
-          </div>
-          <div class="about-containers"> 
-            <div class="details-container">
-              <img src="./assets/briefcase.png" 
-              alt="experience icon" class="icon">
-              <h3>Experience</h3>
-              <p>IT Technician Intern<br>Software Developer Intern</p>
-            </div>
-            <div class="details-container">
-              <img src="./assets/graduation_pic.png" 
-              alt="education icon" class="icon">
-              <h3>Education</h3>
-              <p>B.Sc. Computer Science (Hons)<br>University of Lancaster</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img src="./assets/down-arrow.png"
-      alt="arrow icon" class="icon-arrow" onclick="location.href='./#experience'">
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">My professional career</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-super">
-        <div class="experience-details-container">
-          <div class="about-containers about-containers-exp">
-            <div class="details-container-exp">
-              <img src="assets/diamond-symbol.png" alt="bullet point" class="icon-bullet">
-              <div class="article-container">
-                <h2 class="experience-sub-title">Software Developer Intern</h2>
-                <article>
-                  <div>
-                    <p>Jul 2024 - Oct 2024</p>
-                    <h3>Job summary</h3>
-                    <p>
-                      Internship position on-site, trained as a junior developer by a supervisor at SoftPark ltd, a B2B firm specialising in digital business solutions.
-                      I was mentored by a senior developer who guided me through the professional process of being a software developer. I was exposed to an array of 
-                      languages and frameworks. I was included in the standups and whiteboard sessions. I was immersed in the development lifecycle. I was then assigned
-                      tutorials and books to expand my knowledge base. Overall, this improved my business acumen and communication skills in a corporate setting.
-                      <br><br><br><br>
-                    </p>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-          <div class="about-containers about-containers-exp">
-            <div class="details-container-exp">
-              <img src="assets/diamond-symbol.png" alt="bullet point" class="icon-bullet">
-              <div class="article-container">
-                <h2 class="experience-sub-title">IT Technician Intern</h2>
-                <article>
-                  <div>
-                    <p>Feb 2023 - Jul 2023</p>
-                    <h3>Job summary</h3>
-                    <p>
-                      Worked as a technician under supervision of the senior sysadmin of the branch.
-                      My primary duties were tech support, server maintenance, computer parts acquisition/disposal,
-                      remote desktop management, hardware and software installations/upgrades. I learnt a lot about system administration
-                      and vastly improved my knowledge about computer networks within a business setting.
-                    </p>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section__pic-container" id="gradpic">
-          <img src="./assets/business_me.png" 
-          alt="profile picture" class="about-pic">
-        </div>
-      </div>
-    <img src="./assets/down-arrow.png"
-    alt="arrow icon" class="icon-arrow" onclick="location.href='./#projects'">
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Here are some of my</p>
-      <h1 class="title">Projects</h1>
-      <div class="projects-super">
-        <div class="row">
-          <div class="details-container color-container project-details-container">
-            <div class="article-container">
-              <img src="./assets/placeholder.jpeg"
-              alt="project1" class="project-pic">
-            </div>
-            <h2 class="experience-sub-title project-title">The Beck CPU</h2>
-            <p>Java-based visual CPU (in-progress)</p>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" 
-              onclick="location.href='https://github.com/'">Github Link</button>
-            </div>
-          </div>
-          <div class="details-container color-container project-details-container">
-            <div class="article-container">
-              <img src="./assets/placeholder.jpeg"
-              alt="project1" class="project-pic">
-            </div>
-            <h2 class="experience-sub-title project-title">Beck's Gate</h2>
-            <p>Java Spring internet forum (in-progress)</p>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" 
-              onclick="location.href='https://github.com/'">Github Link</button>
-            </div>
-          </div>
-          <div class="details-container color-container project-details-container">
-            <div class="article-container">
-              <img src="./assets/placeholder.jpeg"
-              alt="project1" class="project-pic">
-            </div>
-            <h2 class="experience-sub-title project-title">BeckBlogs</h2>
-            <p>MERN-stack blog website</p>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" 
-              onclick="location.href='https://github.com/'">Github Link</button>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="details-container color-container project-details-container">
-            <div class="article-container">
-              <img src="./assets/placeholder.jpeg"
-              alt="project1" class="project-pic">
-            </div>
-            <h2 class="experience-sub-title project-title">Millionaire!</h2>
-            <p>Python Flask web-based game</p>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" 
-              onclick="location.href='https://github.com/'">Github Link</button>
-            </div>
-          </div>
-          <div class="details-container color-container project-details-container">
-            <div class="article-container">
-              <img src="./assets/placeholder.jpeg"
-              alt="project1" class="project-pic">
-            </div>
-            <h2 class="experience-sub-title project-title">BekzM. Fin. Co.</h2>
-            <p>Real-time stock trading simulator</p>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" 
-              onclick="location.href='https://github.com/'">Github Link</button>
-            </div>
-          </div>
-          <div class="details-container color-container project-details-container">
-            <div class="article-container">
-              <img src="./assets/placeholder.jpeg"
-              alt="project1" class="project-pic">
-            </div>
-            <h2 class="experience-sub-title project-title">Godot Platformer</h2>
-            <p>2D video game (in-progress)</p>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" 
-              onclick="location.href='https://github.com/'">Github Link</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img src="./assets/down-arrow.png"
-      alt="arrow icon" class="icon-arrow" onclick="location.href='./#academic'">
-    </section>
-    <section id="academic">
-      <p class="section__text__p1">My academic credentials</p>
-      <h1 class="title">Education</h1>
-      <div class="experience-super academic-super">
-        <div class="experience-details-container academic-text">
-          <div class="about-containers" style="padding-top: 0.5rem;">
-            <div class="details-container-exp academic-details">
-              <div class="article-container academic-container">
-                <h2 class="experience-sub-title">Academic Overview</h2>
-                <article>
-                  <div class="academic-sub-text">
-                    <br>
-                    <h3>Preliminary Background</h4>
-                    <p>
-                      Throughout my undergrad degree - I will strive to understand
-                      the theoretical foundations of my modules, and gather practical experience through internships and 
-                      employment post-graduation. My bachelor's thesis will most likely focus on the implementation
-                      of existing research, with further adjustments I may prescribe to fit my research interests.
-                    </p>
-                    <br>
-                    <h3>Academic interests</h4>
-                      <ul class="key-modules modules-text">
-                        <li><span>Applied Computing</span></li>
-                        <li><span>Microcontrollers</span></li>
-                        <li><span>Game Optimisation</span></li>
-                        <li><span>Internet of Things</span></li>
-                        <li><span>Systems Programming</span></li>
-                        <li><span>Wireless Networking</span></li>
-                      </ul>
-                    <br>
-                    <h3>Research aspirations</h4>
-                    <p>
-                      I have a strong desire to further pursue my studies at the master's level.
-                      With my theoretical foundation, paired with my industry knowledge,
-                      I am very much able and interested in becoming thoroughly proficient at my work.
-                      My research interest is vast, so I am willing to adapt to department agendas.
-                    </p>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="details-container color-container degree-container">
-          <div class="academic-title-super">
-            <img src="./assets/University_of_Lancaster_shield.png" alt="uni shield" class="academic-shield">
-            <div>
-              <h4 class="experience-sub-title academic-title">B.Sc. Computer Science (Hons)</h2>
-              <h4 class="experience-sub-title academic-title">University of Lancaster</h2>
-              <p class="experience-sub-title academic-title">Oct 2023 - Jun 2026</p>
-              <p class="experience-sub-title academic-title">Lancaster, Lancashire, UK</p>
-              <h4 class="experience-sub-title academic-title academic-subhead">Grade:<span style="font-weight: 300;"> First-Class Hons (on track)</span></h4>
-            </div>
-          </div>          
-          <div class="academic-super academic-super-below">
-            <h4 class="experience-sub-title academic-title academic-subhead">Key Modules:</h4>
-          </div>
-          <div>
-            <ul class="key-modules degree-modules">
-              <li><span>Algorithms & Computation</span></li>
-              <li><span>Advanced Networking</span></li>
-              <li><span>Operating Systems</span></li>
-              <li><span>Embedded Systems</span></li>
-              <li><span>Parallelism & Concurrency</span></li>
-              <li><span>Languages & Compilation</span></li>
-              <li><span>Distributed Systems</span></li>
-              <li><span>Software Design</span></li>
-            </ul>
-          </div>
-          <div class="academic-super academic-super-below">
-            <h4 class="experience-sub-title academic-title academic-subhead">UG Thesis:</h4>
-          </div>
-          <blockquote class="dissertation">"Not yet determined, wait for Y3"</blockquote>
-          <p style="font-weight: 200;">A study of 'not determined'</p>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" 
-            onclick="location.href='https://www.lancaster.ac.uk/scc/'">University</button>
-            <button class="btn btn-color-2 project-btn" 
-            onclick="location.href='https://github.com/'">Thesis</button>
-          </div>
-        </div>
-      </div>
-    <img src="./assets/down-arrow.png"
-    alt="arrow icon" class="icon-arrow" onclick="location.href='./#contact'">
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Let's get in touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-container contact-super">
-        <div class="contact-info-container-super">
-          <div class="contact-info-container">
-            <img src="./assets/email.jpg" alt="email icon" class="icon contact-icon">
-            <p><a href="mailto:bekuniversity@gmail.com">bekuniversity@gmail.com</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
-            <p><a href="https://www.linkedin.com/in/bekzatkhanmaulen2003/">my LinkedIn</a></p>
-          </div>
-        </div>
-        <p>Will respond as soon as possible!</p>
-        <p>Message me directly for my phone number.</p>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#about">about</a></li>
-          <li><a href="#experience">experience</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#academic">academic</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-      </nav>
-      <p>Portfolio website of Bekzatkhan Maulen, Copyright &#169 2024.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
-</html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bekzatkhan Maulen</title>
+
+<style>
+body {
+    max-width: 760px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-size: 17px;
+    line-height: 1.55;
+    color: #111;
+    background: #fff;
+}
+
+h1, h2 {
+    font-weight: normal;
+}
+
+h1 {
+    margin-bottom: 0.2em;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #bbb;
+    margin: 2em 0;
+}
+
+a {
+    color: #003399;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+.small {
+    color: #666;
+    font-size: 0.9em;
+}
+
+img {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #999;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #666;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Bekzatkhan Maulen</h1>
+
+<p>
+BSc (Hons) Computer Science<br>
+University of Lancaster<br>
+Email:
+<a href="mailto:bekuniversity@gmail.com">bekuniversity@gmail.com</a><br>
+</p>
+
+<img src="./assets/blackandwhiteme.png" width="150" alt="Portrait">
+
+<p>
+Welcome to my homepage. My name is Bekzatkhan 'Beck' Maulen, and I am an aspiring researcher and software engineer with a particular interest in computer networking. I have held professional and volunteering roles in networking, software development, research, and teaching positions. At the current moment, I am pursuing opportunities to continue my studies at the MSc level.
+<br><br>
+
+I graduated from the University of Lancaster with a
+First-Class Honours in Computer Science in 2026. My undergraduate thesis,
+<i>"Evaluating Multi-path Connectivity in 5G Mobile Networks"</i>, investigated
+multi-path communication in modern mobile networks under the supervision of
+Dr. Charalampos Haris Rotsos.
+</p>
+
+<hr>
+
+<h2>Research Interests</h2>
+
+<ul>
+    <li>5G and Beyond Mobile Networks</li>
+    <li>Software Defined Networking (P4)</li>
+    <li>Satellite Non-Terrestrial Networks (NTNs)</li>
+    <li>Flying Ad Hoc Networks (FANETs)</li>
+    <li>Wireless & Mobile Networking</li>
+    <li>Distributed Fault Tolerance</li>
+    <li>Self-configuring & Self-healing Networks</li>
+</ul>
+
+<hr>
+
+<h2>News</h2>
+
+<ul>
+    <li><strong>Aug 2026:</strong> Joined Alaqan Technology LLP as Software Researcher.</li>
+    <li><strong>Jul 2026:</strong> Graduated from Lancaster University with First-Class Honours.</li>
+</ul>
+
+<hr>
+
+<h2>Education</h2>
+
+<p>
+<strong>Lancaster University</strong><br>
+Bachelor of Science (Hons) in Computer Science<br>
+July 2026
+</p>
+
+<ul>
+    <li>Classification: First-Class Honours</li>
+    <li>Relevant Modules: Advanced Networking, Distributed Systems, Embedded Systems</li>
+    <li>Honours Thesis: <i>Evaluating Multi-path Connectivity in 5G Mobile Networks</i></li>
+</ul>
+
+<hr>
+
+<h2>Honours & Awards</h2>
+
+<ul>
+    <li>
+        <strong>Lancaster Global Scholarship</strong> (2023)<br>
+        Merit-based undergraduate scholarship awarded for academic excellence.
+    </li>
+</ul>
+
+<hr>
+
+<h2>Research</h2>
+
+<h3>Alaqan Technology LLP</h3>
+
+<p>
+<strong>Software Researcher</strong><br>
+August 2026 – Present<br>
+Almaty, Kazakhstan
+</p>
+
+<p>
+Research in networking systems and emerging communication technologies.
+</p>
+
+<p>
+Research assistant supporting networking-related research projects.
+</p>
+
+<h3>Lancaster University</h3>
+
+<p>
+<strong>Honours Thesis Research</strong><br>
+September 2025 – April 2026
+</p>
+
+<ul>
+    <li>Thesis: <i>Evaluating Multi-path Connectivity in 5G Mobile Networks</i></li>
+    <li>Grade: 80% (First-Class)</li>
+    <li>Supervisor: Dr. Charalampos ("Haris") Rotsos</li>
+</ul>
+
+<hr>
+
+<h2>Teaching</h2>
+
+<p>
+<strong>Undergraduate Teaching Assistant</strong><br>
+Lancaster University<br>
+January 2025 – March 2026
+</p>
+
+<p>
+Supervised weekly laboratory sessions of 20–40 undergraduate students and
+supported academic staff with teaching material.
+</p>
+
+<ul>
+    <li>SCC.111 – Software Development</li>
+    <li>SCC.121 – Fundamentals of Computer Science</li>
+    <li>SCC.131 – Computer Architecture</li>
+    <li>SCC.231 – Computer Networks</li>
+    <li>SCC.233 – Operating Systems</li>
+</ul>
+
+<hr>
+
+<h2>Employment</h2>
+
+<h3>University of Lancaster</h3>
+
+<p>
+<strong>School of Computing Ambassador</strong><br>
+January 2025 – April 2026
+</p>
+
+<p>
+Organised university recruitment events for prospective students and
+represented the School of Computing during open and offer-holder days.
+</p>
+
+<h3>Softpark LLP</h3>
+
+<p>
+<strong>Junior Software Developer</strong><br>
+July 2024 – October 2024
+</p>
+
+<p>
+Worked on enterprise software systems including Tillypad and Tesera while
+developing programming projects under senior developer supervision.
+</p>
+
+<h3>Kinopark Theatres LLP</h3>
+
+<p>
+<strong>Network Administrator</strong><br>
+February 2023 – July 2023
+</p>
+
+<p>
+Maintained office networks, serviced servers, and provided technical support
+for more than twenty staff members.
+</p>
+
+<hr>
+
+<h2>Leadership & Service</h2>
+
+<h3>Computer Science Society Executive</h3>
+
+<p>
+Lancaster University<br>
+October 2025 – April 2026
+</p>
+
+<p>
+Executive committee member responsible for society finances, event planning,
+and technical seminars for over 150 members.
+</p>
+
+<h3>Academic Representative</h3>
+
+<p>
+School of Computing<br>
+January 2025 – April 2026
+</p>
+
+<p>
+Represented undergraduate students by collecting feedback and contributing to
+School of Computing meetings and decision making.
+</p>
+
+<hr>
+
+<h2>Technical Skills</h2>
+
+<p><strong>Networking & Research</strong></p>
+
+<ul>
+    <li>Cisco Packet Tracer</li>
+    <li>P4</li>
+    <li>Mininet</li>
+    <li>NS-3</li>
+    <li>Docker</li>
+    <li>Hyper-V</li>
+    <li>IMUNES</li>
+</ul>
+
+<p><strong>Programming & Tools</strong></p>
+
+<ul>
+    <li>MySQL</li>
+    <li>Java RMI</li>
+    <li>gRPC & Protocol Buffers</li>
+    <li>Bash</li>
+    <li>Jupyter Notebook</li>
+    <li>UML</li>
+    <li>Microbit</li>
+</ul>
+
+<hr>
+
+<h2>Links</h2>
+
+<ul>
+    <li><a href="#">Curriculum Vitae (PDF)</a></li>
+    <li><a href="#">Honours Thesis</a></li>
+    <li><a href="#">GitHub</a></li>
+    <li><a href="#">LinkedIn</a></li>
+</ul>
+
+<footer>
+Last updated: August 2026
+</footer>
+
+</body>
